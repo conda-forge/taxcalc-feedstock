@@ -3,7 +3,7 @@ About taxcalc
 
 Home: https://github.com/PSLmodels/Tax-Calculator
 
-Package license: CC-BY-1.0
+Package license: CC0-1.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/taxcalc-feedstock/blob/master/LICENSE.txt)
 
