@@ -10,10 +10,10 @@ source:
   sha256: a2abbe279b0ac51cee5f7c7bb793777a449c416c946d2891f316c7fc9be808da
 
 build:
-   noarch: python
-   number: 0
-   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-   entry_points:
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  entry_points:
     - tc = taxcalc.cli.tc:cli_tc_main
 
 requirements:
@@ -43,8 +43,8 @@ about:
   license: CC0-1.0
   license_family: PUBLIC-DOMAIN
   license_file: docs/about/license.md
-  summary: 'open-source microsimulation model for static analysis of USA federal income and payroll taxes.'
-  description: "Tax-Calculator is an open-source microsimulation model for static analysis of USA federal income and payroll taxes."
+  summary: open-source microsimulation model for static analysis of USA federal income and payroll taxes.
+  description: Tax-Calculator is an open-source microsimulation model for static analysis of USA federal income and payroll taxes.
   doc_url: http://taxcalc.pslmodels.org
   dev_url: https://github.com/PSLmodels/Tax-Calculator
 
