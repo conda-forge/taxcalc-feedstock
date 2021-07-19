@@ -3,7 +3,7 @@ About taxcalc
 
 Home: https://github.com/PSLmodels/Tax-Calculator
 
-Package license: CC-BY-1.0
+Package license: CC0-1.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/taxcalc-feedstock/blob/master/LICENSE.txt)
 
@@ -42,6 +42,7 @@ Installing `taxcalc` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `taxcalc` can be installed with:
