@@ -30,6 +30,7 @@ requirements:
     - numba
     - paramtools >=0.18.0
     - aiohttp
+    - pkg_resources
 
 test:
   imports:
