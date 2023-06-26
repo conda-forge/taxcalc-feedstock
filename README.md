@@ -13,7 +13,7 @@ Development: https://github.com/PSLmodels/Tax-Calculator
 
 Documentation: http://taxcalc.pslmodels.org
 
-Tax-Calculator is an open-source microsimulation model for static analysis of US federal income and payroll taxes.
+Tax-Calculator is an open-source microsimulation model for static analysis of USA federal income and payroll taxes.
 
 Current build status
 ====================
