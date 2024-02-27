@@ -150,4 +150,5 @@ Feedstock Maintainers
 =====================
 
 * [@MattHJensen](https://github.com/MattHJensen/)
+* [@jdebacker](https://github.com/jdebacker/)
 
