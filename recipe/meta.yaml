@@ -1,5 +1,6 @@
 {% set name = "taxcalc" %}
-{% set version = "4.3.1" %}
+{% set version = "4.3.2" %}
+{% set python_min = "3.10" %}
 
 
 package:
@@ -8,22 +9,22 @@ package:
 
 source:
   url: https://github.com/PSLmodels/Tax-Calculator/archive/{{ version }}.tar.gz
-  sha256: cf5a4c38b41cb5e6da7c09de2ec7c658a0c6b0ce1732ea720525dc1c9fcbfc01
+  sha256: f90edc305b50c20478163e27511f81a9642dccd92d013dd3fb682513c470c06b
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - tc = taxcalc.cli.tc:cli_tc_main
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
 
   run:
-    - python >=3.7
+    - python {{ python_min }}
     - numpy >=1.14
     - pandas >=1.2.0
     - bokeh >=1.4.0
