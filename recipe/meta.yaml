@@ -1,5 +1,5 @@
 {% set name = "taxcalc" %}
-{% set version = "4.3.5" %}
+{% set version = "4.4.0" %}
 {% set python_min = "3.10" %}
 
 
@@ -30,7 +30,7 @@ requirements:
     - bokeh >=2.4
     - requests
     - numba
-    - paramtools >=0.18.3
+    - paramtools >=0.19.0
     - aiohttp
     - setuptools
 
