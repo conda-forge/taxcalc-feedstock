@@ -1,5 +1,5 @@
 {% set name = "taxcalc" %}
-{% set version = "4.6.2" %}
+{% set version = "4.6.3" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/PSLmodels/Tax-Calculator/archive/{{ version }}.tar.gz
-  sha256: c7e8ed4bc6ec7ac5260e6d851abad924846a1e9d5e197360931e5b86866e9b3a
+  sha256: 8b8b7fa0c79d98deb166c9fdb4234ba05b6f1f14f4199027b43c698cb9bc4419
 
 build:
   noarch: python
@@ -30,8 +30,7 @@ requirements:
     - bokeh >=2.4
     - requests
     - numba
-    - marshmallow <4.0.0
-    - paramtools >=0.19.0
+    - paramtools >=0.20.0
     - aiohttp
     - setuptools
 
