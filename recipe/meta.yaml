@@ -1,5 +1,5 @@
 {% set name = "taxcalc" %}
-{% set version = "4.6.3" %}
+{% set version = "5.0.0" %}
 {% set python_min = "3.10" %}
 
 
