@@ -1,6 +1,6 @@
 {% set name = "taxcalc" %}
 {% set version = "5.2.0" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 
 
 package:
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - tc = taxcalc.cli.tc:cli_tc_main
