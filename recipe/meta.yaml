@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/PSLmodels/Tax-Calculator/archive/{{ version }}.tar.gz
-  sha256: f755184c09dab69a017e78026211d5014593a20ceb8df901b846a9e89f21fa9f
+  sha256: 1ec4dc3e0e99c61cb8389adc60768bfddad199b50522575746b19277325359bb
 
 build:
   noarch: python
