@@ -1,7 +1,7 @@
-
 {% set name = "taxcalc" %}
 {% set version = "6.0.0" %}
 {% set python_min = "3.11" %}
+{% set python_max = "3.14" %}
 
 
 package:
@@ -21,11 +21,11 @@ build:
 
 requirements:
   host:
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - pip
 
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<{{ python_max }}
     - numpy >=1.26
     - pandas >=2.2
     - bokeh >=2.4
