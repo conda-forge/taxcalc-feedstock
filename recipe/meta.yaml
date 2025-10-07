@@ -1,6 +1,7 @@
 {% set name = "taxcalc" %}
 {% set version = "6.0.0" %}
 {% set python_min = "3.11" %}
+{% set python_max = "3.14" %}
 
 
 package:
@@ -13,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - tc = taxcalc.cli.tc:cli_tc_main
@@ -24,7 +25,7 @@ requirements:
     - pip
 
   run:
-    - python {{ python_min }}
+    - python >={{ python_min }},<{{ python_max }}
     - numpy >=1.26
     - pandas >=2.2
     - bokeh >=2.4
