@@ -1,5 +1,5 @@
 {% set name = "taxcalc" %}
-{% set version = "6.5.2" %}
+{% set version = "6.5.3" %}
 {% set python_min = "3.11" %}
 {% set python_max = "3.14" %}
 
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/PSLmodels/Tax-Calculator/archive/{{ version }}.tar.gz
-  sha256: e6893a9890b042252b4be476e8ebf0ad1abc419a8ce172c2bf4d09357d415945
+  sha256: baf782ea7efa9a621fe05648cba6f122776f6a8e99a0ec4dac998097ced6194d
 
 build:
   noarch: python
