@@ -1,7 +1,7 @@
 {% set name = "taxcalc" %}
 {% set version = "6.9.0" %}
 {% set python_min = "3.13" %}
-{% set python_max = "3.15" %}
+{% set python_max = "3.16" %}
 
 
 package:
@@ -23,6 +23,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools >=64.0
 
   run:
     - python >={{ python_min }},<{{ python_max }}
@@ -30,7 +31,7 @@ requirements:
     - pandas >=3.1
     - bokeh >=3.10
     - requests
-    - numba == 0.68.0
+    - numba ==0.68.0
     - paramtools >=0.20.0
     - behresp
     - aiohttp
